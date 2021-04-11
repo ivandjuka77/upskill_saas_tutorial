@@ -23,6 +23,7 @@ h1,h2,h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+//NAVBAR DESIGN
 .navbar, .home-callout {
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
@@ -39,16 +40,35 @@ h1,h2,h3 {
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
-    
     color:white;
     &:hover {
         color:white;
-        opacity:0.75;
     }
 }
 
+.navbar-default .navbar-toggle {
+  border-color:white;
+  &:hover, &:focus {
+    background-color:rgba(255,255,255,0.1)
+  }
+}
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:white;
+    width:20px;
+    height:1px;
 
+  }
+  
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:none;
+}
+
+.navbar-collapse {
+    box-shadow:none;
+}
+
+//home design
 .home-callout {
   color: white;
   margin-top: -20px;
